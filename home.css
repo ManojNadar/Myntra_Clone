@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #screen {
@@ -9,6 +10,8 @@
   /* border: 1px solid black; */
   height: 100vh;
 }
+
+/* navbar */
 
 #navbar {
   width: 100%;
@@ -87,6 +90,10 @@
   display: flex;
   justify-content: space-around;
   text-align: center;
+}
+
+#profile > div > a {
+  color: black;
 }
 
 /* body section ***************/
@@ -187,7 +194,7 @@ li {
   /* border: 1px solid blue; */
 }
 #experience > div > img {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 160px;
   height: 40px;
 }
