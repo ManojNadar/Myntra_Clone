@@ -15,7 +15,7 @@
 
 #navbar {
   width: 100%;
-  height: 80px;
+  height: 12%;
   /* border: 1px solid black; */
   background-color: white;
   display: flex;
@@ -72,7 +72,7 @@
 }
 #search > div > i {
   position: absolute;
-  top: 39px;
+  top: 42px;
   left: 10px;
   color: gray;
 }
@@ -128,7 +128,7 @@
   width: 19%;
   height: 50px;
   position: fixed;
-  right: 0;
+  right: -8%;
   bottom: 35%;
   transform: rotate(90deg);
   z-index: 1;
@@ -154,7 +154,7 @@
   background-color: #1d85fc;
   border-radius: 50%;
   position: fixed;
-  right: 150px;
+  right: 25px;
   bottom: 95px;
   z-index: 2;
 }
