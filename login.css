@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
 }
 
 #screen {
@@ -191,14 +191,18 @@
   cursor: pointer;
 }
 
-#form-end {
+.form-end {
   font-size: 0.7em;
   margin-top: 28px;
 }
-#form-end > p {
+.form-end > p {
   color: #686b78;
 }
-#form-end > p > span {
+.form-end > p > span {
+  color: red;
+  font-weight: bold;
+}
+.form-end > p > span > a {
   color: red;
   font-weight: bold;
 }
