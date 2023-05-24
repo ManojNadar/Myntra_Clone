@@ -5,8 +5,468 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single-Product</title>
+
+    <script
+      src="https://kit.fontawesome.com/cad84b7595.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./single-product.css" />
   </head>
   <body>
-    
+    <div id="screen">
+      <div id="navbar">
+        <div id="logo">
+          <div id="myntra_logo">
+            <a href="./home.html">
+              <img src="./images/myntra.png" alt="myntra_logo" />
+            </a>
+          </div>
+        </div>
+        <div id="navigation">
+          <a id="men" href="">MEN</a>
+          <a href="">WOMEN</a>
+          <a href="">KIDS</a>
+          <a href="">HOME & LIVING</a>
+          <a href="">BEAUTY</a>
+          <a href=""
+            >STUDIO <sup><small> NEW</small></sup>
+          </a>
+        </div>
+
+        <!-- <div id="drop-down">
+          <div>
+            <h4>TopWear</h4>
+            <ul id="dropdown-list">
+              <li><a style="color: black" href="">Tshirts</a></li>
+              <li>Tshirts</li>
+              <li>Tshirts</li>
+              <li>Tshirts</li>
+              <li>Tshirts</li>
+            </ul>
+          </div>
+          <div>
+            <h4>BottomWear</h4>
+            <ul id="dropdown-list">
+              <li>Tshirts</li>
+              <li>Tshirts</li>
+              <li>Tshirts</li>
+              <li>Tshirts</li>
+              <li>Tshirts</li>
+            </ul>
+          </div>
+        </div> -->
+        <div id="search">
+          <div>
+            <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+            <input
+              type="text"
+              placeholder="Search for products, brands and more"
+            />
+          </div>
+        </div>
+        <div id="profile">
+          <div>
+            <a href="./login.html"> <i class="fa-regular fa-user fa-sm"></i></a>
+            <p><small>Profile</small></p>
+          </div>
+          <div>
+            <i class="fa-regular fa-heart fa-sm"></i>
+            <p><small>Wishlist</small></p>
+          </div>
+          <div>
+            <i class="fa-solid fa-bag-shopping fa-sm"></i>
+            <p><small>bag</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="heading">
+        <p>
+          Home / Clothing / Men Clothing / Tshirts / Roadster
+          <b> Tshirts>More By Roadster</b>
+        </p>
+      </div>
+
+      <div id="main-body">
+        <div id="left">
+          <div>
+            <img
+              src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887970-Roadster-Men-Tshirts-9291524206887825-2.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887935-Roadster-Men-Tshirts-9291524206887825-3.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887922-Roadster-Men-Tshirts-9291524206887825-4.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887911-Roadster-Men-Tshirts-9291524206887825-5.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="right">
+          <div>
+            <div id="right-1">
+              <h2>Roadster</h2>
+              <p>Men White Printed Cotton Pure Cotton T-shirt</p>
+
+              <div id="right-ratings">
+                <p>4.1</p>
+                <i class="fa-solid fa-star" style="color: #1d981b"></i>
+                <p class="vertical-line">|</p>
+                <p>4.3k Ratings</p>
+              </div>
+            </div>
+            <div id="right-2">
+              <div id="right-2-inside">
+                <h3>&#8377;359</h3>
+                <p>MRP</p>
+                <p>&#8377;599</p>
+                <p>(40% OFF)</p>
+              </div>
+
+              <p>inclusive of all taxes</p>
+              <div id="right-2-inside-2">
+                <p>SELECT SIZE</p>
+                <p>SIZE CHART ></p>
+              </div>
+
+              <div id="size">
+                <p>XS</p>
+                <p>S</p>
+                <p>M</p>
+                <p>L</p>
+                <p>XL</p>
+              </div>
+
+              <div id="btn">
+                <div>
+                  <button>ADD TO CART</button>
+                </div>
+                <div>
+                  <button>WISHLIST</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="right-3">
+              <div id="right-3-inside-1">
+                <h3>DELIVERY OPTIONS</h3>
+                <i class="fa-solid fa-truck fa-lg" style="color: #000000"></i>
+              </div>
+
+              <div id="right-3-inside-2">
+                <div>
+                  <input type="text" placeholder="Enter Pincode" />
+
+                  <h5>Check</h5>
+                </div>
+
+                <div>
+                  <p>
+                    Please enter PIN code to check delivery time & Pay on
+                    Delivery Availability
+                  </p>
+
+                  <div id="details">
+                    <p>100% Original Products</p>
+                    <p>Pay on delivery might be available</p>
+                    <p>Easy 14 days returns and exchanges</p>
+                    <p>100% Original Products</p>
+                    <p>Try & Buy might be available</p>
+                  </div>
+                </div>
+
+                <div id="right-3-inside-3">
+                  <div id="heading-2">
+                    <h3>BEST OFFERS</h3>
+                    <i class="fa-solid fa-tag fa-lg"></i>
+                  </div>
+
+                  <p id="bestprice">
+                    Best Price: <span class="orange-text">Rs. 299</span>
+                  </p>
+
+                  <ul>
+                    <li>
+                      Coupon Discount: Rs. 60 off (check cart for final savings)
+                    </li>
+                    <li>
+                      Applicable on: Orders above Rs. 599 (only on first
+                      purchase)
+                    </li>
+                    <li>Coupon code: <span id="coupon"> MYNTRA100</span></li>
+                  </ul>
+
+                  <p class="red-p">View Eligible Products</p>
+
+                  <h4 class="">
+                    Up To Rs 500 Cashback on CRED pay transactions.
+                  </h4>
+
+                  <ul>
+                    <li>
+                      Min Spend Rs 1,000. Available only on Android Devices.
+                    </li>
+                  </ul>
+
+                  <p class="red-p">Terms & Condition</p>
+                  <h4>EMI option available</h4>
+                  <ul>
+                    <li>EMI starting from Rs.17/month</li>
+                  </ul>
+
+                  <p class="red-p">View Plan</p>
+                </div>
+              </div>
+            </div>
+            <div id="right-4">
+              <div>
+                <h3>Product Details</h3>
+                <p>White printed T-shirt, has a round neck, short sleeves</p>
+                <h3>Size & Fit</h3>
+                <p>The model (height 6') is wearing a size M</p>
+                <h3>Material & Care</h3>
+
+                <p>100% cotton</p>
+                <p>Machine-wash</p>
+                <h3>Specifications</h3>
+              </div>
+
+              <div id="specs">
+                <div id="left-spec">
+                  <div>
+                    <p>Fabric</p>
+                    <p>Pure Cotton</p>
+                  </div>
+                  <div>
+                    <p>Length</p>
+                    <p>Regular</p>
+                  </div>
+                  <div>
+                    <p>Multipack Set</p>
+                    <p>Single</p>
+                  </div>
+                  <div>
+                    <p>Occasion</p>
+                    <p>Casual</p>
+                  </div>
+                </div>
+                <div id="right-spec">
+                  <div>
+                    <p>Fit</p>
+                    <p>Regular Fit</p>
+                  </div>
+                  <div>
+                    <p>Main Trend</p>
+                    <p>New Basics</p>
+                  </div>
+                  <div>
+                    <p>Neck</p>
+                    <p>Round Neck</p>
+                  </div>
+                  <div>
+                    <p>Pattern</p>
+                    <p>Printed</p>
+                  </div>
+                </div>
+              </div>
+              <p class="red-p">See More</p>
+            </div>
+
+            <div id="right-5">
+              <div id="right-5-inside-1">
+                <h4>Ratings</h4>
+                <i class="fa-solid fa-star fa-sm"></i>
+              </div>
+
+              <div id="right-5-inside-2">
+                <div id="left-ratings">
+                  <div id="left-rating-flex">
+                    <h1>4.1</h1>
+                    <i
+                      class="fa-solid fa-star fa-lg"
+                      style="color: #3c7317"
+                    ></i>
+                  </div>
+                  <p>4.3k Verified Buyers</p>
+                </div>
+                <div id="right-side-ratings">
+                  <div id="main-rating">
+                    <p>5</p>
+                    <i class="fa-solid fa-star"></i>
+
+                    <hr
+                      style="width: 150px; height: 5px; background-color: red"
+                    />
+
+                    <p>2274</p>
+                  </div>
+                  <div id="main-rating">
+                    <p>4</p>
+                    <i class="fa-solid fa-star"></i>
+
+                    <hr
+                      style="
+                        width: 150px;
+                        height: 5px;
+                        background-color: rgb(0, 255, 34);
+                      "
+                    />
+
+                    <p>1010</p>
+                  </div>
+                  <div id="main-rating">
+                    <p>3</p>
+                    <i class="fa-solid fa-star"></i>
+
+                    <hr
+                      style="
+                        width: 150px;
+                        height: 5px;
+                        background-color: rgb(6, 230, 255);
+                      "
+                    />
+
+                    <p>480</p>
+                  </div>
+                  <div id="main-rating">
+                    <p>2</p>
+                    <i class="fa-solid fa-star"></i>
+
+                    <hr
+                      style="
+                        width: 150px;
+                        height: 5px;
+                        background-color: rgb(189, 252, 0);
+                      "
+                    />
+
+                    <p>186</p>
+                  </div>
+
+                  <!--  -->
+                  <div id="main-rating">
+                    <p>1</p>
+                    <i class="fa-solid fa-star"></i>
+
+                    <hr
+                      style="
+                        width: 150px;
+                        height: 5px;
+                        background-color: rgb(17, 0, 255);
+                      "
+                    />
+
+                    <p>347</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="right-6">
+              <div id="right-6-inside-1">
+                <h4>WHAT CUSTOMERS SAID</h4>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p style="color: grey">Fit</p>
+              <div style="display: flex; align-items: center">
+                <div id="right-6-inside-2" style="display: flex">
+                  <p id="inside-color"></p>
+                </div>
+                <p style="padding-left: 15px; font-size: 0.8em">
+                  Just Right (68%)
+                </p>
+              </div>
+              <p style="color: grey">Length</p>
+
+              <div style="display: flex; align-items: center">
+                <div id="right-6-inside-2">
+                  <p id="inside-color"></p>
+                </div>
+                <p style="padding-left: 15px; font-size: 0.8em">
+                  Just Right (68%)
+                </p>
+              </div>
+              <p class="red-p">View Details</p>
+            </div>
+
+            <div id="right-7">
+              <h4>Customer Photos (34)</h4>
+
+              <div id="flex-img">
+                <div id="customer-img">
+                  <img
+                    src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div id="customer-img">
+                  <img
+                    src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div id="customer-img">
+                  <img
+                    src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div id="customer-img">
+                  <img
+                    src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <h4>Customer Reviews (341)</h4>
+
+              <div id="comments">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Itaque incidunt rem adipisci delectus voluptate repellendus at
+                  quod hic rerum veritatis!
+                </p>
+
+                <div id="interact">
+                  <p>Amit Kumar 3 | Apr 2021</p>
+
+                  <div id="thumbs">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div id="last">
+                <p class="red-p">View all 341 reviews</p>
+                <p>Product Code: <b> 2475811 </b></p>
+                <p>Seller : <span class="red-p">Truenett Commerce</span></p>
+                <p>View Supplier Information</p>
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
