@@ -10,7 +10,7 @@
 #screen {
   width: 100%;
   /* border: 1px solid black; */
-  /* height: 100vh; */
+  /* height: 200vh; */
   /* background-color: yellow; */
 }
 
@@ -429,4 +429,58 @@
   padding-bottom: 5px;
 }
 
-/* Footer */
+/*  */
+
+#pages {
+  width: 98%;
+  /* background-color: #1d85fc; */
+  margin: auto;
+  padding-left: 5%;
+  border-top: 1px solid rgb(188, 186, 186);
+}
+
+#child-page {
+  width: 90%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+}
+#child-page {
+  margin: 50px 0;
+  width: 70%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-around;
+}
+#child-page > div:nth-child(1) {
+  width: 20%;
+  /* border: 1px solid red; */
+}
+#child-page > div:nth-child(2) {
+  width: 60%;
+  /* border: 1px solid rgb(23, 28, 179); */
+  padding-left: 15%;
+}
+#child-page > div:nth-child(2) > button {
+  width: 6.5%;
+  height: 40px;
+  margin: 0 2px;
+  background-color: transparent;
+  border: none;
+}
+#child-page > div:nth-child(2) > button:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+#child-page > div:nth-child(3) {
+  width: 10%;
+  /* border: 1px solid rgb(4, 201, 14); */
+}
+#child-page > div:nth-child(3) > button {
+  width: 100%;
+  /* border: 1px solid rgb(4, 201, 14); */
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid grey;
+  color: black;
+}
