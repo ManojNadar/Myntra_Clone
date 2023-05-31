@@ -46,42 +46,59 @@
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 0.9em;
   font-weight: 500;
   position: relative;
 }
-
-#men:hover #drop-down {
-  display: block;
+#navigation > a {
+  height: 100%;
+  padding-top: 33px;
+  /* width: 10%; */
+  /* border: 1px solid red; */
 }
 
 /* ----------------------dropdown */
 
 #drop-down {
-  height: 200px;
-  width: 300px;
-  background-color: red;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
   position: absolute;
-  left: 180px;
-  top: 85px;
-  display: flex;
-  justify-content: space-around;
-  /* align-items: center; */
-  text-align: center;
+  left: 11.5%;
+  top: 100%;
   display: none;
 }
 
-#drop-down > div {
-  padding-top: 15px;
-}
-#dropdown-list > li {
-  color: black;
-  width: 100%;
+#drop-list {
+  display: flex;
+  justify-content: space-around;
 }
 
+.lists {
+  width: 17%;
+}
+.lists > div {
+  margin-bottom: 20px;
+}
+.lists h3 {
+  font-size: 0.9em;
+  margin: 10px 0 0 0;
+  color: rgb(233, 93, 93);
+}
+.lists ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lists h3:hover {
+  color: rgb(246, 62, 62);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ----------------------------------- */
+
 #navigation > a:nth-child(6) {
-  padding-bottom: 5px;
+  padding-top: 27px;
 }
 #navigation small {
   color: red;
