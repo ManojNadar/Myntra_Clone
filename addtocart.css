@@ -372,7 +372,7 @@
 /* footer */
 
 #footer {
-  width: 65%;
+  width: 69%;
   margin: auto;
   /* border: 1px solid red; */
   /* background-color: yellow; */
@@ -382,7 +382,7 @@
 }
 
 #payment-method {
-  width: 65%;
+  width: 62%;
   /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
@@ -391,7 +391,10 @@
 #payment-img {
   width: 9%;
   height: 32px;
-  border: 1px solid rgb(207, 204, 204);
+  border: 1px solid rgb(233, 230, 230);
+}
+#payment-img:hover {
+  cursor: pointer;
 }
 #payment-img > img {
   width: 100%;

@@ -186,9 +186,38 @@
           </div>
         </div>
         <div id="profile">
-          <div>
+          <div id="prof-dd">
             <a href="./login.html"> <i class="fa-regular fa-user fa-sm"></i></a>
             <p><small>Profile</small></p>
+          </div>
+
+          <!-- DropDown Profile -->
+
+          <div id="dropdown-prof">
+            <div>
+              <a href="./profile.html">
+                <h3>Hello Manoj</h3>
+                <p>96587413230</p>
+              </a>
+            </div>
+            <div>
+              <p>Orders</p>
+              <p>Wishlists</p>
+              <p>Gift Cards</p>
+              <p>Contact us</p>
+              <p>Myntra Inside</p>
+            </div>
+            <div>
+              <p>Myntra Credit</p>
+              <p>Coupons</p>
+              <p>Saved Cards</p>
+              <p>Saved VPA</p>
+              <p>Saved Addresses</p>
+            </div>
+            <div>
+              <p>Edit Profile</p>
+              <p>Logout</p>
+            </div>
           </div>
           <div>
             <i class="fa-regular fa-heart fa-sm"></i>
@@ -600,6 +629,27 @@
       dropDown.addEventListener("mouseleave", function () {
         men.style.borderBottom = "none";
         dropDown.style.display = "none";
+      });
+
+      let profile = document.getElementById("prof-dd");
+
+      let dropdownProfile = document.getElementById("dropdown-prof");
+
+      profile.addEventListener("mouseover", function () {
+        dropdownProfile.style.display = "block";
+        profile.style.borderBottom = "3px solid red";
+      });
+      profile.addEventListener("mouseleave", function () {
+        dropdownProfile.style.display = "none";
+        profile.style.borderBottom = "none";
+      });
+      dropdownProfile.addEventListener("mouseover", function () {
+        dropdownProfile.style.display = "block";
+        profile.style.borderBottom = "3px solid red";
+      });
+      dropdownProfile.addEventListener("mouseleave", function () {
+        dropdownProfile.style.display = "none";
+        profile.style.borderBottom = "none";
       });
     </script>
   </body>
