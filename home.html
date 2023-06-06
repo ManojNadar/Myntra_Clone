@@ -36,10 +36,10 @@
         </div>
         <div id="navigation">
           <a id="men" href="./multiple-product.html">MEN</a>
-          <a href="./womenMyntra.html">WOMEN</a>
-          <a href="./kids.html">KIDS</a>
-          <a href="./homeLiving.html">HOME & LIVING</a>
-          <a href="./beauty.html">BEAUTY</a>
+          <a id="women" href="./womenMyntra.html">WOMEN</a>
+          <a id="kids" href="./kids.html">KIDS</a>
+          <a id="homeLeaving" href="./homeLiving.html">HOME & LIVING</a>
+          <a id="beauty" href="./beauty.html">BEAUTY</a>
           <a href=""
             >STUDIO <sup><small> NEW</small></sup>
           </a>
@@ -606,13 +606,9 @@
     </div>
 
     <script>
+      // Men Hover DropDown
       let men = document.getElementById("men");
       let dropDown = document.getElementById("drop-down");
-
-      // function onHover() {
-      //   men.style.borderBottom = "1px solid red";
-      //   dropDown.style.display = "none";
-      // }
 
       men.addEventListener("mouseover", function () {
         men.style.borderBottom = "3px solid red";
@@ -631,6 +627,94 @@
         dropDown.style.display = "none";
       });
 
+      // Women Hove DropDown
+
+      let women = document.getElementById("women");
+      // let dropDown = document.getElementById("drop-down");
+
+      women.addEventListener("mouseover", function () {
+        women.style.borderBottom = "3px solid red";
+        dropDown.style.display = "block";
+      });
+      women.addEventListener("mouseleave", function () {
+        women.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+      dropDown.addEventListener("mouseover", function () {
+        women.style.borderBottom = "none";
+        dropDown.style.display = "block";
+      });
+      dropDown.addEventListener("mouseleave", function () {
+        women.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+
+      // kids Hove DropDown
+
+      let kids = document.getElementById("kids");
+      // let dropDown = document.getElementById("drop-down");
+
+      kids.addEventListener("mouseover", function () {
+        kids.style.borderBottom = "3px solid red";
+        dropDown.style.display = "block";
+      });
+      kids.addEventListener("mouseleave", function () {
+        kids.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+      dropDown.addEventListener("mouseover", function () {
+        kids.style.borderBottom = "none";
+        dropDown.style.display = "block";
+      });
+      dropDown.addEventListener("mouseleave", function () {
+        kids.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+
+      // home and living Hove DropDown
+
+      let homeLeaving = document.getElementById("homeLeaving");
+      // let dropDown = document.getElementById("drop-down");
+
+      homeLeaving.addEventListener("mouseover", function () {
+        homeLeaving.style.borderBottom = "3px solid red";
+        dropDown.style.display = "block";
+      });
+      homeLeaving.addEventListener("mouseleave", function () {
+        homeLeaving.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+      dropDown.addEventListener("mouseover", function () {
+        homeLeaving.style.borderBottom = "none";
+        dropDown.style.display = "block";
+      });
+      dropDown.addEventListener("mouseleave", function () {
+        homeLeaving.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+      // home and living Hove DropDown
+
+      let beauty = document.getElementById("beauty");
+      // let dropDown = document.getElementById("drop-down");
+
+      beauty.addEventListener("mouseover", function () {
+        beauty.style.borderBottom = "3px solid red";
+        dropDown.style.display = "block";
+      });
+      beauty.addEventListener("mouseleave", function () {
+        beauty.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+      dropDown.addEventListener("mouseover", function () {
+        beauty.style.borderBottom = "none";
+        dropDown.style.display = "block";
+      });
+      dropDown.addEventListener("mouseleave", function () {
+        beauty.style.borderBottom = "none";
+        dropDown.style.display = "none";
+      });
+
+      // profile hover dropDown
       let profile = document.getElementById("prof-dd");
 
       let dropdownProfile = document.getElementById("dropdown-prof");
