@@ -1,20 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica, Arial, sans-serif;
-  text-decoration: none;
   box-sizing: border-box;
-}
-
-a {
-  color: rgb(152, 151, 151);
+  text-decoration: none;
 }
 
 #screen {
   width: 100%;
-  /* border: 1px solid black; */
-  height: 100vh;
 }
 
 /* navbar */
@@ -185,122 +177,79 @@ a {
   font-size: 0.9em;
 }
 
-/* body section ***************/
+/* body  */
 
-#body {
+#main-body {
   width: 100%;
-  margin-top: 80px;
-  /* background-color: red; */
 }
 
-#top-body {
+#body-section {
   width: 100%;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 10%;
+}
+
+#heading {
+  /* border: 1px solid blue; */
+  width: 15%;
+  margin-left: 7%;
+}
+
+#wish-container {
   width: 90%;
   margin: auto;
-}
-#top-body > div > img {
-  height: 435px;
-  width: 100%;
-  margin-top: 40px;
-}
-
-#sale-offer {
-  position: absolute;
-  right: 390px;
-  top: 185px;
-}
-
-#side-sticky {
-  background-color: #535766;
-  color: white;
-  width: 19%;
-  height: 50px;
-  position: fixed;
-  right: -8%;
-  bottom: 35%;
-  transform: rotate(90deg);
-  z-index: 1;
-}
-#side-sticky > h4 {
-  transform: rotate(180deg);
-  padding-bottom: 15px;
-  padding-left: 20px;
-  font-weight: bold;
-  font-size: 1.1em;
-  letter-spacing: 2px;
-}
-#side-sticky > i {
-  position: absolute;
-  /* border: 1px solid red; */
-  left: 32px;
-  bottom: 23px;
-}
-
-#empty-bell {
-  width: 50px;
-  height: 50px;
-  background-color: #1d85fc;
-  border-radius: 50%;
-  position: fixed;
-  right: 25px;
-  bottom: 95px;
-  z-index: 2;
-}
-
-#empty-bell > img {
-  padding: 10px 0 0 8px;
-}
-
-/* middle */
-
-#middle-body {
-  width: 100%;
-}
-.image-section-1 {
-  display: flex;
-  width: 100%;
-}
-.image-section-1 > div > img {
-  width: 100%;
-  height: auto;
-  margin-top: 7px;
-}
-
-.middle-heading > div > img {
-  width: 100%;
-  height: 105px;
-  margin-top: 7px;
-}
-.image-section {
-  display: flex;
-}
-.image-section > div > img {
-  width: 100%;
-  height: 200px;
-  margin-top: 7px;
-}
-
-/* new section image */
-
-#image-section-new {
-  /* background-color: yellow; */
-  width: 95%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 35px 10px;
-  /* border: 1px solid red; */
-  margin: auto;
+  gap: 15px 0;
 }
 
-#image-section-new > div > img {
-  /* height: 250px; */
-  height: 280px;
-
-  width: 220px;
+.wish-images {
+  width: 17%;
+  height: 390px;
+  position: relative;
+  margin-top: 2%;
+  border: 1px solid rgb(209, 208, 208);
+  /* background-color: yellow; */
+}
+.wish-images > img {
+  width: 100%;
+  height: 70%;
+}
+.wish-images > i {
+  position: absolute;
+  right: 3%;
+  top: 5%;
 }
 
-/* fotter */
+.wish-images > .prod-details {
+  padding: 3% 0;
+  padding-left: 3%;
+  border-bottom: 1px solid rgb(209, 208, 208);
+  line-height: 30px;
+}
+
+.prod-details > p {
+  padding: 1px 0;
+}
+
+.move-btn > p {
+  color: red;
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.color-text {
+  color: orange;
+}
+
+.text-break {
+  text-decoration: line-through;
+}
+
+/* footer */
 
 #footer {
   width: 100%;
