@@ -12,6 +12,8 @@
       src="https://kit.fontawesome.com/cad84b7595.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/login.js"></script>
   </head>
   <body>
     <div id="screen">
@@ -70,35 +72,45 @@
               <p>or</p>
               <h4>Signup</h4>
             </div>
+            <!-- Login form -->
+            <form onsubmit="signInForm(event)">
+              <input
+                type="email"
+                placeholder="Your Email"
+                id="login_email_myntra"
+              />
+              <input
+                type="password"
+                placeholder="Your Password"
+                id="login_password_myntra"
+              />
+              <div id="terms-conditions">
+                <p>
+                  By Continuing, I agree to the
+                  <span
+                    >Terms of Use
 
-            <form>
-              <input type="text" placeholder="+91 | Mobile Number" />
+                    <span>&</span> Privacy Policy</span
+                  >
+                </p>
+              </div>
+
+              <div id="btn">
+                <button type="submit" value="Login">Login</button>
+              </div>
+              <!-- *************************** -->
+
+              <div class="form-end">
+                <p>Have trouble logging in ? <span>Get help</span></p>
+              </div>
+
+              <div class="form-end">
+                <p>
+                  New User ?
+                  <span> <a href="./register.html"> Register Here </a></span>
+                </p>
+              </div>
             </form>
-            <div id="terms-conditions">
-              <p>
-                By Continuing, I agree to the
-                <span
-                  >Terms of Use
-
-                  <span>&</span> Privacy Policy</span
-                >
-              </p>
-            </div>
-
-            <div id="btn">
-              <button>Continue</button>
-            </div>
-
-            <div class="form-end">
-              <p>Have trouble logging in ? <span>Get help</span></p>
-            </div>
-
-            <div class="form-end">
-              <p>
-                New User ?
-                <span> <a href="./register.html"> Register Here </a></span>
-              </p>
-            </div>
           </div>
         </div>
       </div>

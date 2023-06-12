@@ -365,3 +365,13 @@ span {
   color: gray;
   line-height: 27px;
 }
+
+/* js added clasList */
+
+.logs {
+  width: 50%;
+  height: 35px;
+  background-color: #ff3f6c;
+  color: white;
+  border: none;
+}

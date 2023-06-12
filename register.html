@@ -11,6 +11,8 @@
     ></script>
     <link rel="stylesheet" href="./login.css" />
     <link rel="stylesheet" href="./register.css" />
+
+    <script src="./js/register.js"></script>
   </head>
   <body>
     <div id="screen">
@@ -68,43 +70,58 @@
           <div id="right-reg">
             <div id="main-form">
               <h2>Sign Up</h2>
-
-              <div class="input-details">
-                <label>User Name</label>
-                <input type="text" placeholder="User Name" />
-              </div>
-              <div class="input-details">
-                <label>Email</label>
-
-                <input type="email" placeholder="Email" />
-              </div>
-              <div class="input-details">
-                <label>Password</label>
-
-                <input type="password" placeholder="*************" />
-              </div>
-              <div class="input-details">
-                <label>Confirm Password</label>
-
-                <input type="password" placeholder="*************" />
-              </div>
-              <div class="input-checkbox">
-                <input type="checkbox" />
-                <p>I agree to the <b> Terms and Conditons..</b></p>
-              </div>
-
-              <div id="sign-up">
-                <div>
-                  <button>Sign Up</button>
+              <!-- registering Form -->
+              <form onsubmit="registerForm(event)">
+                <div class="input-details">
+                  <label>User Name</label>
+                  <input
+                    type="text"
+                    placeholder="User Name"
+                    id="reg_userName"
+                  />
                 </div>
-                <div>
-                  <p>
-                    <a href="./login.html"
-                      >Already Have an Account? <span>Sign in</span>
-                    </a>
-                  </p>
+                <div class="input-details">
+                  <label>Email</label>
+
+                  <input type="email" placeholder="Email" id="reg_Email" />
                 </div>
-              </div>
+                <div class="input-details">
+                  <label>Password</label>
+
+                  <input
+                    type="password"
+                    placeholder="*************"
+                    id="reg_Password"
+                  />
+                </div>
+                <div class="input-details">
+                  <label>Confirm Password</label>
+
+                  <input
+                    type="password"
+                    placeholder="*************"
+                    id="reg_Cpassword"
+                  />
+                </div>
+                <!-- ***************************************************** -->
+                <div class="input-checkbox">
+                  <input type="checkbox" />
+                  <p>I agree to the <b> Terms and Conditons..</b></p>
+                </div>
+
+                <div id="sign-up">
+                  <div>
+                    <button>Sign Up</button>
+                  </div>
+                  <div>
+                    <p>
+                      <a href="./login.html"
+                        >Already Have an Account? <span>Sign in</span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
