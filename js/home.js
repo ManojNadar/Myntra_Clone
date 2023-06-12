@@ -7,7 +7,7 @@ window.onload = () => {
   if (current_user) {
     let logoutStructure = ` <button class="logs" onclick="logout()">logout</button>`;
     logout_login.innerHTML = logoutStructure;
-    profile_name.innerHTML = current_user.userName_myntra.toUpperCase();
+    profile_name.innerHTML = ` Welcome ${current_user.userName_myntra.toUpperCase()}`;
   } else {
     window.location.href = "../login.html";
     let loginStructure = ` <button class="logs" onclick="login()">login</button>`;
