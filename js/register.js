@@ -18,7 +18,7 @@ function registerForm(event) {
     myntra_reg_password &&
     myntra_reg_Cpassword
   ) {
-    if (myntra_reg_password >= 8 && myntra_reg_Cpassword >= 8) {
+    if (myntra_reg_password.length >= 8 && myntra_reg_Cpassword.length >= 8) {
       if (myntra_reg_password === myntra_reg_Cpassword) {
         let myntra_reg_user =
           JSON.parse(localStorage.getItem("myntra_reg_users")) || [];
