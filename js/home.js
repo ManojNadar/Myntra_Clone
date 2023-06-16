@@ -9,7 +9,7 @@ window.onload = () => {
     logout_login.innerHTML = logoutStructure;
     profile_name.innerHTML = ` Welcome ${current_user.userName_myntra.toUpperCase()}`;
   } else {
-    // window.location.href = "../login.html";
+    window.location.href = "../login.html";
     let loginStructure = ` <button class="logs" onclick="login()">login</button>`;
     logout_login.innerHTML = loginStructure;
   }
