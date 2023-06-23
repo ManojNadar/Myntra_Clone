@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add products</title>
+
+    <link rel="stylesheet" href="./addProducts.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <form onsubmit="submitProducts(event)">
+        <a href="../multiple-product.html">men section</a> <br />
+
+        <label>Product Image</label> <br />
+        <input id="productImage" type="text" placeholder=" Image link" />
+        <br />
+        <label>Product Name</label> <br />
+        <input id="productname" type="text" placeholder="product name" /> <br />
+        <label>Brand Name</label> <br />
+        <input id="brandName" type="text" placeholder="Brand name" /> <br />
+        <label>Product Price</label> <br />
+        <input id="productPrice" type="number" placeholder="Product Price" />
+        <br />
+        <label>Discount Price</label> <br />
+        <input id="discountPrice" type="number" placeholder="Discount Price" />
+        <br />
+        <label>Offer</label> <br />
+        <input id="offer" type="number" placeholder="Offer" /> <br />
+        <input type="submit" value="Submit Product" />
+      </form>
+    </div>
+
+    <script>
+      function submitProducts(event) {
+        event.preventDefault();
+
+        let productImage = document.getElementById("productImage").value;
+        let productName = document.getElementById("productname").value;
+        let brandName = document.getElementById("brandName").value;
+        let productPrice = document.getElementById("productPrice").value;
+        let discountPrice = document.getElementById("discountPrice").value;
+        let offer = document.getElementById("offer").value;
+
+        // alert("hello");
+        // console.log(productName, brandName, discountPrice, offer);
+
+        let storeProduct =
+          JSON.parse(localStorage.getItem("myntraProducts")) || [];
+
+        let productObj = {
+          productImage: productImage,
+          productName: productName,
+          brandName: brandName,
+          productPrice: productPrice,
+          discountPrice: discountPrice,
+          offer: offer,
+        };
+        storeProduct.push(productObj);
+        localStorage.setItem("myntraProducts", JSON.stringify(storeProduct));
+        alert("product added");
+        document.getElementById("productImage").value = "";
+        document.getElementById("productname").value = "";
+        document.getElementById("brandName").value = "";
+        document.getElementById("productPrice").value = "";
+        document.getElementById("discountPrice").value = "";
+        document.getElementById("offer").value = "";
+      }
+    </script>
+  </body>
+</html>
